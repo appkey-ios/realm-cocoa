@@ -7,7 +7,8 @@ x.x.x Release notes (yyyy-MM-dd)
 
 ### Enhancements
 
-* None.
+* Improve the performance of allocating instances of `Object` subclasses
+  that have `LinkingObjects` properties.
 
 ### Bugfixes
 

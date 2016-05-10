@@ -116,8 +116,7 @@ void RLMInitializeSwiftAccessorGenerics(__unsafe_unretained RLMObjectBase *const
 
     for (RLMProperty *prop in object->_objectSchema.computedProperties) {
         if (prop.type == RLMPropertyTypeLinkingObjects) {
-            RLMResults *results = RLMDynamicGet(object, prop);
-            [RLMObjectUtilClass(YES) initializeLinkingObjectsProperty:object property:prop results:results];
+            [RLMObjectUtilClass(YES) initializeLinkingObjectsProperty:object property:prop];
         }
     }
 }
